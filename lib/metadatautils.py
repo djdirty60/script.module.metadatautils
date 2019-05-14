@@ -161,7 +161,7 @@ class MetadataUtils(object):
         '''path to use to lookup studio logos, must be set by the calling addon'''
         self._studiologos_path = value
 
-    def get_animated_artwork(self, imdb_id, manual_select=False, ignore_cache=False):
+    def get_animated_artwork(self, imdb_id, manual_select=True, ignore_cache=False):
         '''get animated artwork, perform extra check if local version still exists'''
         artwork = self.animatedart.get_animated_artwork(
             imdb_id, manual_select=manual_select, ignore_cache=ignore_cache)
